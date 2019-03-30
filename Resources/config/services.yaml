@@ -1,0 +1,10 @@
+services:
+    skwi.au_dd_bundle.init:
+        class: Skwi\AuDDBundle\Services\AuDDDumper
+        arguments:
+            - '@event_dispatcher'
+            - '%kernel.debug%'
+            - '@var_dumper.cloner'
+            - '@data_collector.dump'
+        tags:
+            - { name: 'kernel.event_listener', event: 'kernel.request', method: 'handleInit'}

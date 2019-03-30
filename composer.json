@@ -1,0 +1,26 @@
+{
+    "name": "skwi/au-dd-bundle",
+    "type": "symfony-bundle",
+    "description": "Override symfony var-dumper by adding PNL's Au DD music video",
+    "keywords": ["dump", "debug", "fun", "pnl"],
+    "homepage": "https://skwi.fr",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Cedric Spalvieri",
+            "email": "cedric@skwi.fr"
+        }
+    ],
+    "require": {
+        "php": "^7.1.3",
+        "symfony/var-dumper": "~4.1"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.12"
+    },
+    "autoload": {
+        "psr-4": {"Skwi\\AuDDBundle\\": ""}
+    },
+    "minimum-stability": "dev"
+}
+
